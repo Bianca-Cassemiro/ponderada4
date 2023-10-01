@@ -1,0 +1,38 @@
+
+.loginContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6dabe4, #f093fb);
+  }
+
+
+.loginForm{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.login{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button{
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #3B3B3B;
+}
+
+.Link{
+  align-self: center;
+}
