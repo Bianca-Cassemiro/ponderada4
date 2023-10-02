@@ -40,6 +40,7 @@ def generate_insights():
 # Load trained Pipeline
 
 class InputModel(BaseModel):
+    CustomerID: int
     Gender: str
     Age: float
     Annual: float
@@ -55,6 +56,7 @@ async def options_predict():
 @app.post("/predict", response_model=OutputModel)
 def predict(data: InputModel):
     input_data = [[
+        data.CustomerID,
         data.Age,
         data.Gender,
         data.Annual
